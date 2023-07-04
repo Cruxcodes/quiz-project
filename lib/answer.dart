@@ -10,8 +10,9 @@ class Answer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: ElevatedButton(
-        style: ButtonStyle(
-          backgroundColor: MaterialStatePropertyAll<Color>(Colors.green),
+
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Colors.green,
         ),
         child: Text(answer!),
         onPressed: () {
